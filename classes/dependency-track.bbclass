@@ -56,7 +56,8 @@ python do_dependencytrack_collect() {
             sbom["components"].append({
                 "name": names[index],
                 "version": version,
-                "cpe": cpe
+                "cpe": cpe,
+                "type": "application"
             })
 
     # write it back to the deploy directory
